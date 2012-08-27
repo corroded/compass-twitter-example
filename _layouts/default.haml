@@ -18,7 +18,7 @@
     %title AELOGICA Style Guide
     %link{:href => "http://fonts.googleapis.com/css?family=Inconsolata", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Anonymous+Pro", :rel => "stylesheet", :type => "text/css"}/
-    {% include_css screen %}
+    {% include_css twitter/bootstrap %}
     {% include_css plugins/snippet %}
     {% include_css print %}
     /[if IE]
@@ -42,10 +42,100 @@
           {% endfor %}
 
       %section#main-content
-        .sidebar
+        %table.table
+          %thead
+            %tr
+              %th #
+              %th First Name
+              %th Last Name
+              %th Username
+          %tbody
+            %tr
+              %td 1
+              %td Mark
+              %td Otto
+              %td @mdo
+            %tr
+              %td 2
+              %td Jacob
+              %td Thornton
+              %td @fat
+            %tr
+              %td 3
+              %td Larry
+              %td the Bird
+              %td @twitter
 
-        .markdown
-          {{ content }}
+        %table.table-striped
+          %thead
+            %tr
+              %th #
+              %th First Name
+              %th Last Name
+              %th Username
+          %tbody
+            %tr
+              %td 1
+              %td Mark
+              %td Otto
+              %td @mdo
+            %tr
+              %td 2
+              %td Jacob
+              %td Thornton
+              %td @fat
+            %tr
+              %td 3
+              %td Larry
+              %td the Bird
+              %td @twitter
+
+        %table.table-bordered
+          %thead
+            %tr
+              %th #
+              %th First Name
+              %th Last Name
+              %th Username
+          %tbody
+            %tr
+              %td 1
+              %td Mark
+              %td Otto
+              %td @mdo
+            %tr
+              %td 2
+              %td Jacob
+              %td Thornton
+              %td @fat
+            %tr
+              %td 3
+              %td Larry
+              %td the Bird
+              %td @twitter
+
+        %table.table-hover
+          %thead
+            %tr
+              %th #
+              %th First Name
+              %th Last Name
+              %th Username
+          %tbody
+            %tr
+              %td 1
+              %td Mark
+              %td Otto
+              %td @mdo
+            %tr
+              %td 2
+              %td Jacob
+              %td Thornton
+              %td @fat
+            %tr
+              %td 3
+              %td{:colspan => "2"} Larry the Bird
+              %td @twitter
 
       %footer
         %p
