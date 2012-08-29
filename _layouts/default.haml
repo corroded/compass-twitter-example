@@ -1,14 +1,8 @@
 :plain
   ---
   menu:
-    - name: css
-      label: Styling (CSS)
-    - name: html
-      label: Markup (HTML)
-    - name: js
-      label: Behavior (JS)
-    - name: ruby
-      label: Ruby
+    - name: tables
+      label: Tables
   ---
 
 !!!
@@ -42,6 +36,49 @@
           {% endfor %}
 
       %section#main-content
+        %p
+          %a{:name => "#code"}
+
+          .bs-docs-example
+            For example,
+            %code &lt;section&gt;
+            should be wrapped as inline.
+
+          .bs-docs-example
+            %pre
+              &lt;p&gt;Sample text here...&lt;/p&gt;
+
+        %p
+          %a{:name => "#layout"}
+
+        .bs-docs-grid
+          .row.show-grid
+            .span1 1
+            .span1 1
+            .span1 1
+            .span1 1
+            .span1 1"}
+            .span1 1
+            .span1 1
+            .span1 1
+            .span1 1
+            .span1 1
+            .span1 1
+            .span1 1
+          .row.show-grid
+            .span2 2
+            .span3 3
+            .span4 4
+            .span3 3
+          .row.show-grid
+            .span4 4
+            .span5 5
+          .row.show-grid
+            .span9 9       
+
+        %p
+          %a{:name => "#tables"}
+        
         %table.table
           %thead
             %tr
