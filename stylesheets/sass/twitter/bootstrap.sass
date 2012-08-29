@@ -67,44 +67,5 @@
 //@import utilities 
 // Has to be last to override when necessary
 
-@include table-defaults
-
-#container
-  @include container
-
-.row
-  @include row
-
-.span1
-  @include span(1)
-
-.span2
-  @include span(2)
-
-.span3
-  @include span(3)
-
-.span4
-  @include span(4)
-
-.span5
-  @include span(5)
-
-.span9
-  @include span(9)
-
-.show-grid 
-  margin-top: 10px
-  margin-bottom: 20px
-
-.show-grid [class*="span"] 
-  background-color: #eee
-  text-align: center
-  @include border-radius(3px)
-  min-height: 40px
-  line-height: 40px
-
-.show-grid:hover [class*="span"]
-  background: #ddd
-
-@include text
+@import main
+@import tests/tests

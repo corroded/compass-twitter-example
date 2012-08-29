@@ -35,6 +35,222 @@
           {% endif %}
           {% endfor %}
 
+      %section#tests
+        .navbar.navbar-inverse.navbar-fixed-top
+          .navbar-inner
+            .container
+              %a.brand Bootstrap
+
+        .bs-docs-example
+          .container
+            .row
+              .half
+                .type-test
+                  %h1 h1. Heading 1
+                  %h2 h2. Heading 2
+                  %h3 h3. Heading 3
+                  %h4 h4. Heading 4
+                  %h5 h5. Heading 5
+                  %h6 h6. Heading 6
+                  %p Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              .half
+                .type-test
+                  %h1 h1. Heading 1
+                  %p Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  %h2 h2. Heading 2
+                  %p Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  %h3 h3. Heading 3
+                  %p Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  %h4 h4. Heading 4
+                  %p Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  %h5 h5. Heading 5
+                  %p Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  %h6 h6. Heading 6
+                  %p Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+          .container
+            .row
+              .half
+                %h4 Bordered without thead
+                %table.table.table-bordered
+                  %tbody
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                %h4 Bordered without thead, with caption
+                %table.table.table-bordered
+                  %caption Table caption
+                  %tbody
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                %h4 Bordered without thead, with colgroup
+                %table.table.table-bordered
+                  %colgroup
+                    %col.col1
+                      %col.col2
+                        %col.col3
+                  %tbody
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                  %tfoot
+                    %tr
+                      %td 3
+                      %td 6
+                      %td 9
+                %h4 Bordered with thead, with colgroup
+                %table.table.table-bordered
+                  %colgroup
+                    %col.col1
+                      %col.col2
+                        %col.col3
+                  %thead
+                    %tr
+                      %th A
+                      %th B
+                      %th C
+                  %tbody
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                  %tfoot
+                    %tr
+                      %td 3
+                      %td 6
+                      %td 9
+              / /span
+              .half
+                %h4 Bordered with thead and caption
+                %table.table.table-bordered
+                  %caption Table caption
+                  %thead
+                    %tr
+                      %th 1
+                      %th 2
+                      %th 3
+                  %tbody
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td 2
+                      %td 3
+                  %tfoot
+                    %tr
+                      %td 3
+                      %td 6
+                      %td 9
+                %h4 Bordered with rowspan and colspan
+                %table.table.table-bordered
+                  %thead
+                    %tr
+                      %th 1
+                      %th 2
+                      %th 3
+                  %tbody
+                    %tr
+                      %td{:colspan => "2"} 1 and 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td{:rowspan => "2"} 2
+                      %td 3
+                    %tr
+                      %td{:rowspan => "2"} 1
+                      %td 3
+                    %tr
+                      %td{:colspan => "2"} 2 and 3
+              / /span
+            / /row
+            %h4 Grid sizing
+            .row
+              .span12
+                %table.table.table-bordered
+                  %thead
+                    %tr
+                      %th.span3 1
+                      %th.span4 2
+                      %th 3
+                  %tbody
+                    %tr
+                      %td{:colspan => "2"} 1 and 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td{:rowspan => "2"} 2
+                      %td 3
+                    %tr
+                      %td{:rowspan => "2"} 1
+                      %td 3
+                    %tr
+                      %td{:colspan => "2"} 2 and 3
+            / /row
+            %h4 Fluid grid sizing
+            .row-fluid
+              .span12
+                %table.table.table-bordered
+                  %thead
+                    %tr
+                      %th.span3 1
+                      %th.span4 2
+                      %th 3
+                  %tbody
+                    %tr
+                      %td{:colspan => "2"} 1 and 2
+                      %td 3
+                    %tr
+                      %td 1
+                      %td{:rowspan => "2"} 2
+                      %td 3
+                    %tr
+                      %td{:rowspan => "2"} 1
+                      %td 3
+                    %tr
+                      %td{:colspan => "2"} 2 and 3
+
       %section#main-content
         %p
           %a{:name => "#code"}

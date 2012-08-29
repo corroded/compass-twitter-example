@@ -212,17 +212,18 @@ pre code {
   border: 0;
 }
 
-/* line 128, ../sass/twitter/_tables.sass */
-table {
-  width: 100%;
-  margin-bottom: 20px;
-}
 /* line 9, ../sass/twitter/_tables.sass */
-table table {
+table {
   max-width: 100%;
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* line 130, ../sass/twitter/_tables.sass */
+table {
+  width: 100%;
+  margin-bottom: 20px;
 }
 /* line 23, ../sass/twitter/_tables.sass */
 table th,
@@ -261,7 +262,7 @@ table tbody + tbody {
   padding: 4px 5px;
 }
 
-/* line 135, ../sass/twitter/_tables.sass */
+/* line 136, ../sass/twitter/_tables.sass */
 .table-bordered {
   border: 1px solid #dddddd;
   border-collapse: separate;
@@ -293,62 +294,50 @@ table tbody + tbody {
 /* line 82, ../sass/twitter/_tables.sass */
 .table-bordered thead:first-child tr:first-child th:first-child,
 .table-bordered tbody:first-child tr:first-child td:first-child {
-  -webkit-border-radius: 4px 0 0 0;
-  -moz-border-radius: 4px 0 0 0;
-  -ms-border-radius: 4px 0 0 0;
-  -o-border-radius: 4px 0 0 0;
-  border-radius: 4px 0 0 0;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 /* line 85, ../sass/twitter/_tables.sass */
 .table-bordered thead:first-child tr:first-child th:last-child,
 .table-bordered tbody:first-child tr:first-child td:last-child {
-  -webkit-border-radius: 0 4px 0 0;
-  -moz-border-radius: 0 4px 0 0;
-  -ms-border-radius: 0 4px 0 0;
-  -o-border-radius: 0 4px 0 0;
-  border-radius: 0 4px 0 0;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
 /* line 89, ../sass/twitter/_tables.sass */
 .table-bordered thead:last-child tr:last-child th:first-child,
 .table-bordered tbody:last-child tr:last-child td:first-child,
 .table-bordered tfoot:last-child tr:last-child td:first-child {
-  -webkit-border-radius: 0 0 0 4px;
-  -moz-border-radius: 0 0 0 4px;
-  -ms-border-radius: 0 0 0 4px;
-  -o-border-radius: 0 0 0 4px;
-  border-radius: 0 0 0 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 /* line 93, ../sass/twitter/_tables.sass */
 .table-bordered thead:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child td:last-child,
 .table-bordered tfoot:last-child tr:last-child td:last-child {
-  -webkit-border-radius: 0 0 4px 0;
-  -moz-border-radius: 0 0 4px 0;
-  -ms-border-radius: 0 0 4px 0;
-  -o-border-radius: 0 0 4px 0;
-  border-radius: 0 0 4px 0;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 /* line 99, ../sass/twitter/_tables.sass */
 .table-bordered caption + thead tr:first-child th:first-child,
 .table-bordered caption + tbody tr:first-child td:first-child,
 .table-bordered colgroup + thead tr:first-child th:first-child,
 .table-bordered colgroup + tbody tr:first-child td:first-child {
-  -webkit-border-radius: 4px 0 0 0;
-  -moz-border-radius: 4px 0 0 0;
-  -ms-border-radius: 4px 0 0 0;
-  -o-border-radius: 4px 0 0 0;
-  border-radius: 4px 0 0 0;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 /* line 104, ../sass/twitter/_tables.sass */
 .table-bordered caption + thead tr:first-child th:last-child,
 .table-bordered caption + tbody tr:first-child td:last-child,
 .table-bordered colgroup + thead tr:first-child th:last-child,
 .table-bordered colgroup + tbody tr:first-child td:last-child {
-  -webkit-border-radius: 0 0 0 4px;
-  -moz-border-radius: 0 0 0 4px;
-  -ms-border-radius: 0 0 0 4px;
-  -o-border-radius: 0 0 0 4px;
-  border-radius: 0 0 0 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 /* line 116, ../sass/twitter/_tables.sass */
@@ -363,7 +352,7 @@ table tbody + tbody {
   background-color: whitesmoke;
 }
 
-/* line 72, ../sass/twitter/bootstrap.sass */
+/* line 3, ../sass/twitter/_main.sass */
 #container {
   width: 940px;
   margin-right: auto;
@@ -381,7 +370,7 @@ table tbody + tbody {
   clear: both;
 }
 
-/* line 75, ../sass/twitter/bootstrap.sass */
+/* line 6, ../sass/twitter/_main.sass */
 .row {
   margin-left: -20px;
   *zoom: 1;
@@ -397,55 +386,62 @@ table tbody + tbody {
   clear: both;
 }
 
-/* line 78, ../sass/twitter/bootstrap.sass */
+/* line 9, ../sass/twitter/_main.sass */
 .span1 {
   float: left;
   margin-left: 20px;
   width: 60px;
 }
 
-/* line 81, ../sass/twitter/bootstrap.sass */
+/* line 12, ../sass/twitter/_main.sass */
 .span2 {
   float: left;
   margin-left: 20px;
   width: 140px;
 }
 
-/* line 84, ../sass/twitter/bootstrap.sass */
+/* line 15, ../sass/twitter/_main.sass */
 .span3 {
   float: left;
   margin-left: 20px;
   width: 220px;
 }
 
-/* line 87, ../sass/twitter/bootstrap.sass */
+/* line 18, ../sass/twitter/_main.sass */
 .span4 {
   float: left;
   margin-left: 20px;
   width: 300px;
 }
 
-/* line 90, ../sass/twitter/bootstrap.sass */
+/* line 21, ../sass/twitter/_main.sass */
 .span5 {
   float: left;
   margin-left: 20px;
   width: 380px;
 }
 
-/* line 93, ../sass/twitter/bootstrap.sass */
+/* line 24, ../sass/twitter/_main.sass */
+.half {
+  float: left;
+  margin-left: 20px;
+  width: 460px;
+}
+
+/* line 27, ../sass/twitter/_main.sass */
 .span9 {
   float: left;
   margin-left: 20px;
   width: 700px;
 }
 
-/* line 96, ../sass/twitter/bootstrap.sass */
+/* line 30, ../sass/twitter/_main.sass */
 .show-grid {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-/* line 100, ../sass/twitter/bootstrap.sass */
+/* line 34, ../sass/twitter/_main.sass */
 .show-grid [class*="span"] {
   background-color: #eeeeee;
   text-align: center;
@@ -458,7 +454,7 @@ table tbody + tbody {
   line-height: 40px;
 }
 
-/* line 107, ../sass/twitter/bootstrap.sass */
+/* line 41, ../sass/twitter/_main.sass */
 .show-grid:hover [class*="span"] {
   background: #dddddd;
 }
@@ -466,93 +462,102 @@ table tbody + tbody {
 /* line 8, ../sass/twitter/_type.sass */
 p {
   margin: 0 0 10px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
 }
-/* line 13, ../sass/twitter/_type.sass */
-p small {
-  font-size: 12px;
-  color: #999999;
+
+/* line 14, ../sass/twitter/_type.sass */
+small {
+  font-size: 85%;
+}
+
+/* line 17, ../sass/twitter/_type.sass */
+strong {
+  font-weight: bold;
 }
 
 /* line 20, ../sass/twitter/_type.sass */
+em {
+  font-style: italic;
+}
+
+/* line 23, ../sass/twitter/_type.sass */
+cite {
+  font-style: normal;
+}
+
+/* line 30, ../sass/twitter/_type.sass */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 10px 0;
   font-family: inherit;
   font-weight: bold;
+  line-height: 1;
   color: inherit;
   text-rendering: optimizelegibility;
 }
-/* line 27, ../sass/twitter/_type.sass */
+/* line 37, ../sass/twitter/_type.sass */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-weight: normal;
+  line-height: 1;
   color: #999999;
 }
 
-/* line 31, ../sass/twitter/_type.sass */
+/* line 42, ../sass/twitter/_type.sass */
 h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+/* line 46, ../sass/twitter/_type.sass */
+h2 {
   font-size: 30px;
   line-height: 40px;
 }
-/* line 34, ../sass/twitter/_type.sass */
-h1 small {
-  font-size: 18px;
-}
 
-/* line 37, ../sass/twitter/_type.sass */
-h2 {
+/* line 50, ../sass/twitter/_type.sass */
+h3 {
   font-size: 24px;
   line-height: 40px;
 }
-/* line 40, ../sass/twitter/_type.sass */
+
+/* line 54, ../sass/twitter/_type.sass */
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* line 58, ../sass/twitter/_type.sass */
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 62, ../sass/twitter/_type.sass */
+h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* line 66, ../sass/twitter/_type.sass */
+h1 small {
+  font-size: 24px;
+}
+
+/* line 69, ../sass/twitter/_type.sass */
 h2 small {
   font-size: 18px;
 }
 
-/* line 43, ../sass/twitter/_type.sass */
-h3 {
-  font-size: 18px;
-  line-height: 30px;
-}
-/* line 46, ../sass/twitter/_type.sass */
-h3 small {
+/* line 72, ../sass/twitter/_type.sass */
+h3 small, h4 small {
   font-size: 14px;
 }
 
-/* line 49, ../sass/twitter/_type.sass */
-h4, h5, h6 {
-  line-height: 20px;
-}
-
-/* line 52, ../sass/twitter/_type.sass */
-h4 {
-  font-size: 14px;
-}
-/* line 54, ../sass/twitter/_type.sass */
-h4 small {
-  font-size: 12px;
-}
-
-/* line 57, ../sass/twitter/_type.sass */
-h5 {
-  font-size: 12px;
-}
-
-/* line 60, ../sass/twitter/_type.sass */
-h6 {
-  font-size: 11px;
-  color: #999999;
-  text-transform: uppercase;
-}
-
-/* line 70, ../sass/twitter/_type.sass */
+/* line 79, ../sass/twitter/_type.sass */
 ul, ol {
   padding: 0;
   margin: 0 0 10px 25px;
 }
 
-/* line 74, ../sass/twitter/_type.sass */
+/* line 83, ../sass/twitter/_type.sass */
 ul ul,
 ul ol,
 ol ol,
@@ -560,51 +565,33 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 80, ../sass/twitter/_type.sass */
-ul {
-  list-style: disc;
-}
-
-/* line 83, ../sass/twitter/_type.sass */
-ol {
-  list-style: decimal;
-}
-
-/* line 86, ../sass/twitter/_type.sass */
+/* line 88, ../sass/twitter/_type.sass */
 li {
   line-height: 20px;
 }
 
-/* line 89, ../sass/twitter/_type.sass */
-ul.unstyled,
-ol.unstyled {
-  margin-left: 0;
-  list-style: none;
-}
-
-/* line 95, ../sass/twitter/_type.sass */
+/* line 92, ../sass/twitter/_type.sass */
 dl {
   margin-bottom: 20px;
 }
 
-/* line 98, ../sass/twitter/_type.sass */
+/* line 95, ../sass/twitter/_type.sass */
 dt,
 dd {
   line-height: 20px;
 }
 
-/* line 102, ../sass/twitter/_type.sass */
+/* line 99, ../sass/twitter/_type.sass */
 dt {
   font-weight: bold;
-  line-height: 19px;
 }
 
-/* line 107, ../sass/twitter/_type.sass */
+/* line 102, ../sass/twitter/_type.sass */
 dd {
   margin-left: 10px;
 }
 
-/* line 115, ../sass/twitter/_type.sass */
+/* line 109, ../sass/twitter/_type.sass */
 hr {
   margin: 20px 0;
   border: 0;
@@ -612,52 +599,42 @@ hr {
   border-bottom: 1px solid white;
 }
 
-/* line 122, ../sass/twitter/_type.sass */
-strong {
-  font-weight: bold;
-}
-
-/* line 125, ../sass/twitter/_type.sass */
-em {
-  font-style: italic;
-}
-
-/* line 129, ../sass/twitter/_type.sass */
+/* line 116, ../sass/twitter/_type.sass */
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #dddddd;
+  border-bottom: 1px dotted #999999;
 }
 
-/* line 133, ../sass/twitter/_type.sass */
+/* line 120, ../sass/twitter/_type.sass */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
-/* line 138, ../sass/twitter/_type.sass */
+/* line 125, ../sass/twitter/_type.sass */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
-/* line 142, ../sass/twitter/_type.sass */
+/* line 129, ../sass/twitter/_type.sass */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
   line-height: 25px;
 }
-/* line 145, ../sass/twitter/_type.sass */
+/* line 132, ../sass/twitter/_type.sass */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
-/* line 149, ../sass/twitter/_type.sass */
+/* line 136, ../sass/twitter/_type.sass */
 blockquote small:before {
   content: "\2014 \00A0";
 }
-/* line 152, ../sass/twitter/_type.sass */
+/* line 139, ../sass/twitter/_type.sass */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -665,13 +642,21 @@ blockquote.pull-right {
   border-right: 5px solid #eeeeee;
   border-left: 0;
 }
-/* line 158, ../sass/twitter/_type.sass */
+/* line 145, ../sass/twitter/_type.sass */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
+/* line 149, ../sass/twitter/_type.sass */
+blockquote.pull-right small:before {
+  content: "";
+}
+/* line 152, ../sass/twitter/_type.sass */
+blockquote.pull-right small:after {
+  content: "\00A0 \2014";
+}
 
-/* line 164, ../sass/twitter/_type.sass */
+/* line 157, ../sass/twitter/_type.sass */
 q:before,
 q:after,
 blockquote:before,
@@ -679,7 +664,7 @@ blockquote:after {
   content: "";
 }
 
-/* line 171, ../sass/twitter/_type.sass */
+/* line 164, ../sass/twitter/_type.sass */
 address {
   display: block;
   margin-bottom: 20px;
@@ -687,12 +672,69 @@ address {
   line-height: 20px;
 }
 
-/* line 178, ../sass/twitter/_type.sass */
-small {
-  font-size: 100%;
+/* Bootstrap CSS Tests */
+/* Remove background image */
+/* line 6, ../sass/twitter/tests/_tests.sass */
+body {
+  background-image: none;
 }
 
-/* line 181, ../sass/twitter/_type.sass */
-cite {
-  font-style: normal;
+/* Space out subhead */
+/* line 11, ../sass/twitter/tests/_tests.sass */
+.subhead {
+  margin-bottom: 36px;
+}
+
+/*h4 {
+ *  margin-bottom: 5px;
+ *} */
+/* line 18, ../sass/twitter/tests/_tests.sass */
+.type-test {
+  margin-bottom: 20px;
+  padding: 0 20px 20px;
+  background: url(/images/grid-baseline-20px.png);
+}
+/* line 22, ../sass/twitter/tests/_tests.sass */
+.type-test h1, .type-test h2, .type-test h3, .type-test h4, .type-test h5, .type-test h6 {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* colgroup tests */
+/* line 27, ../sass/twitter/tests/_tests.sass */
+.col1 {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* line 30, ../sass/twitter/tests/_tests.sass */
+.col2 {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* line 33, ../sass/twitter/tests/_tests.sass */
+.col3 {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* Fluid row inputs */
+/* line 38, ../sass/twitter/tests/_tests.sass */
+#rowInputs [class*=span], #fluidRowInputs [class*=span] {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* Fluid grid */
+/* line 43, ../sass/twitter/tests/_tests.sass */
+.fluid-grid {
+  margin-bottom: 45px;
+}
+/* line 45, ../sass/twitter/tests/_tests.sass */
+.fluid-grid .row {
+  height: 40px;
+  padding-top: 10px;
+  margin-top: 10px;
+  color: #dddddd;
+  text-align: center;
+}
+/* line 51, ../sass/twitter/tests/_tests.sass */
+.fluid-grid .span1 {
+  background-color: #999999;
 }
